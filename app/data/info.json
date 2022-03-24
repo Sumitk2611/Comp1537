@@ -1,0 +1,23 @@
+[
+    {
+        "Title": "Rock",
+        "src": "/img/rock.jpg",
+        "info":"Rock music first grew out of the rock'n'roll movement of the 1940s and 50s, which itself was inspired by country and African-American rhythm and blues from the 1920s and 30s.Click more to see the top 10 rock songs"
+    },
+    {
+        "Title": "Pop music",
+        "src": "/img/popmusic.jpg",
+        "info":"They have a good rhythm, a catchy melody, and are easy to remember and sing along to. They usually have a chorus that's repeated several times and two or more verses. Click more to see the top 10 pop songs"
+    },
+    {
+        "Title": "Jazz",
+        "src": "/img/jazz.jpg",
+        "info":"Jazz is about making something familiar--a familiar song--into something fresh. And about making something shared--a tune that everyone knows--into somethingpersonal. Click more to see the top 10 Jazz songs"
+    },
+    {
+        "Title": "Hip Hop Music",
+        "src": "/img/hiphop.jpg",
+        "info":"Hip-Hop music is a musical genre consisting of a stylized rhythmic music originally created by DJs isolating the percussion breaks of popular songs, sometimes with two turntables to extend the breaks. Click more to see the top 10 Hip Hop songs"
+    }
+    
+]

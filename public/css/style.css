@@ -1,0 +1,428 @@
+h2 {
+    text-align: center;
+}
+
+@font-face {
+    font-family: "Hurricane";
+    src: url("/font/Hurrican/Hurricane-Regular.ttf");
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #eeeeee, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000,
+            0 0 50px #9554b3, 0 0 60px #9554b3, 0 0 70px #9554b3;
+    }
+
+    to {
+        text-shadow: 0 0 20px #eeeeee, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6,
+            0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+
+@media screen and (max-width:1280px) {
+    body {
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 1fr 4fr 5fr 1fr;
+        background-color: rgb(29, 59, 77);
+        color: white;
+    }
+
+    nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        /* background-color:rgb(66, 63, 63); */
+        color: white;
+    }
+
+    #LogoCaption {
+        display: none;
+        font-family: "Hurricane";
+        color: #ffffff;
+        -webkit-animation: glow 1s ease-in-out infinite alternate;
+        -moz-animation: glow 1s ease-in-out infinite alternate;
+        animation: glow 1s ease-in-out infinite alternate;
+        padding-top: 2%;
+    }
+
+    button {
+        color: rgb(248, 248, 248);
+        background-color: rgb(12, 174, 185);
+        border: solid;
+        height: 70%;
+        border-radius: 10px;
+        box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.2),
+            inset 0px -5px 0px 0px rgba(0, 0, 0, 0.3),
+            inset 0px 2px 0px 0px rgba(255, 255, 255, 0.5);
+    }
+
+    button:hover {
+        background-color: aliceblue;
+        color: black;
+        font-weight: bolder;
+    }
+
+    button:active {
+        box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.2),
+            inset 0px -2px 0px 0px rgba(0, 0, 0, 0.3),
+            inset 0px 2px 0px 0px rgba(255, 255, 255, 0.5);
+        top: 3px;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    .leftMargin {
+        margin-left: 20%;
+    }
+
+    #nav1 {
+        grid-column: 2;
+    }
+
+    #nav2 {
+        grid-column: 3;
+    }
+
+    #nav3 {
+        grid-column: 4;
+    }
+
+    #nav4 {
+        grid-column: 5;
+    }
+
+    #logo {
+        grid-column: 1;
+        width: 40%;
+        height:70%;
+        filter: invert(1);
+    }
+
+    figure {
+        margin-left: 0%;
+        margin-right: 0%;
+        position: relative;
+    }
+
+    figure img {
+        width: 100%;
+        height: auto;
+        /* opacity: 0.8; */
+    }
+
+    figcaption {
+        position: absolute;
+        top: 90%;
+        left: 42%;
+        background-color: rgba(33, 96, 121, 0.233);
+        color: rgb(255, 255, 255);
+        font-size: 2em;
+    }
+
+    caption {
+        font-size: 2em;
+        font-weight: 600;
+        margin-bottom: 1%;
+    }
+
+    table,
+    td {
+        margin-top: 5%;
+        margin-left: 0%;
+        border: solid rgb(0, 0, 0);
+        font-size: 20px;
+        background-color: rgb(29, 99, 104);
+    }
+
+    tr td {
+        padding: 1%;
+        width: 10%
+    }
+
+    #cardHolder {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+        border-style: solid;
+        border-color: rgb(153, 149, 149);
+        /* border-radius: 5%; */
+        background-color: rgb(29, 99, 104);
+        height: fit-content;
+        margin-top: 10px;
+        margin-left: 10px;
+        display: grid;
+        grid-template-rows: 3fr 0.5fr 1fr 0.5fr;
+    }
+
+    .musicImage {
+        grid-row: 1;
+        width: 100%;
+        border-radius: 7%;
+    }
+
+    .cardHeading {
+        grid-row: 2;
+        height: fit-content;
+    }
+
+    .card button {
+        height: 50%;
+        width: 50%;
+        grid-row: 4;
+        margin-left: 25%;
+        /* margin-top: 10%; */
+    }
+
+    .content {
+        grid-row: 3;
+        height:fit-content;
+        font-style: italic;
+        
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        font-style: italic;
+    }
+
+    #footerConter {
+        grid-column: 1;
+    }
+    footer img {
+        width: 15%;
+        grid-column: 2;
+    }
+
+    #footerimg1 {
+        margin-left: 60%;
+    }
+
+    hr {
+        width: 100%;
+        background-color: grey;
+        height: 1%;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    body {
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 1fr 8fr 8fr 1fr;
+        /* background-image: url(/img/music.jpg); */
+        background-color: rgb(29, 59, 77);
+        background-size: 100%;
+        color: white;
+    }
+
+    nav {
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr 2fr 2fr 2fr;
+        color: white;
+    }
+
+    #LogoCaption {
+        grid-column: 2;
+        font-family: "Hurrican";
+        font-style: italic;
+        font-size: 4em;
+        text-align: left;
+        font-weight: 700;
+        font-size: 70px;
+        color: #ffffff;
+        -webkit-animation: glow 1s ease-in-out infinite alternate;
+        -moz-animation: glow 1s ease-in-out infinite alternate;
+        animation: glow 1s ease-in-out infinite alternate;
+        padding-top: 2%;
+    }
+
+
+    button {
+        width: 70%;
+        color: aliceblue;
+        background-color: rgb(12, 174, 185);
+        border: solid;
+        border-radius: 10px;
+        box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.2),
+            inset 0px -5px 0px 0px rgba(0, 0, 0, 0.3),
+            inset 0px 2px 0px 0px rgba(255, 255, 255, 0.5);
+    }
+
+
+    button:hover {
+        background-color: aliceblue;
+        color: black;
+        font-weight: bolder;
+    }
+
+    button:active {
+        box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.2),
+            inset 0px -2px 0px 0px rgba(0, 0, 0, 0.3),
+            inset 0px 2px 0px 0px rgba(255, 255, 255, 0.5);
+        top: 3px;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    .leftMargin {
+        margin-left: 20%;
+    }
+
+    #nav1 {
+        grid-column: 3;
+        height: 80%;
+    }
+
+    #nav2 {
+        grid-column: 4;
+        height: 80%;
+    }
+
+    #nav3 {
+        grid-column: 5;
+        height: 80%;
+    }
+
+    #nav4 {
+        grid-column: 6;
+        height: 80%;
+    }
+
+    #logo {
+        grid-column: 1;
+        width: 60%;
+        filter: invert(1);
+    }
+
+    figure {
+        margin-left: 0%;
+        margin-right: 0%;
+        position: relative;
+    }
+
+    figure img {
+        margin-top: 2%;
+        margin-left: 10%;
+        width: 90%;
+        height: 20%;
+        margin-left: 5%;
+        opacity: 1;
+    }
+
+    figcaption {
+        position: absolute;
+        font-weight: 900;
+        top: 80%;
+        left: 43%;
+        background-color: rgba(33, 96, 121, 0.233);
+        color: rgb(255, 255, 255);
+        font-size: 3em;
+        opacity: 2;
+    }
+
+    caption {
+        font-size: 2em;
+        font-weight: 600;
+        margin-bottom: 1%;
+    }
+
+    table,
+    td {
+        padding: 1%;
+        margin-top: 5%;
+        margin-left: 0%;
+        border: 1px solid rgb(0, 0, 0);
+        font-size: 20px;
+        background-color: rgb(29, 99, 104);
+    }
+
+    tr td {
+        width: 10%
+    }
+
+    #cardHolder {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .card {
+        border-style: solid;
+        border-color: rgb(153, 149, 149);
+        /* border-radius: 5%; */
+        /* background-color: rgb(39, 38, 38); */
+        background-color: rgb(29, 99, 104);
+        padding: 1%;
+        margin-top: 10px;
+        margin-left: 10px;
+        display: grid;
+        grid-template-rows: 4fr 0.5fr 1.5fr 1fr;
+    }
+
+    .musicImage {
+        margin-left: auto;
+        margin-right: auto;
+        grid-row: 1;
+        width: 100%;
+        border-radius: 7%;
+        justify-content: center;
+
+    }
+
+    .cardHeading {
+        grid-row: 2;
+    }
+
+    .card button {
+        width: 50%;
+        height: 50%;
+        margin-left: 25%;
+        margin-bottom: 0%;
+        grid-row: 4;
+
+    }
+
+    .content {
+        grid-row: 3;
+        font-style: italic;
+        padding: 2%;
+    }
+
+    
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        font-style: italic;
+    }
+
+    #footerConter {
+        grid-column: 1;
+    }
+    footer img {
+        width: 10%;
+        grid-column: 2;
+    }
+
+    #footerimg1 {
+        margin-left: 75%;
+    }
+
+    hr {
+        width: 100%;
+        background-color: grey;
+        height: 1%;
+    }
+
+
+}
